@@ -1,0 +1,32 @@
+body{
+  background: skyblue;
+  font-family: vdl-yotag, sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+header{
+  background: blue;
+}
+
+.main{
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  background: snow;
+}
+
+h1{
+  margin: 0px;
+}
+
+.main-main{
+  background: greenyellow;
+}
+
+.main-side{
+  background: green;
+}

@@ -1,0 +1,53 @@
+body {
+  background: skyblue;
+  font-family: vdl-yotag, sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+header {
+  background: blue;
+}
+
+.main {
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  background: snow;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.main-main {
+  background: skyblue;
+  width: 75%;
+}
+
+.main-side {
+  background: skyblue;
+  width: 25%;
+}
+
+.main-side_sticky {
+  postion: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+
+.main-side_sticky_menu{
+  background: white;
+  margin: 15px;
+}
+
+.main-main-main{
+  background: white;
+  margin: 15px;
+  height: 1500px;
+}
