@@ -22,6 +22,7 @@ body {
 /*ヘッダー*/
 header {
   background: snow;
+  height: 300px;
 }
 
 /*メイン*/
@@ -116,6 +117,8 @@ h1 {
 /*SNSのWebアイコンフォントの色*/
 .SNS-icon {
   color: rgb(135, 206, 235);
+  font-size: 45px;
+  text-decoration: none;
 }
 
 /*Discordのふきだし関係*/
@@ -153,4 +156,26 @@ h1 {
 /*Discordのふきだし関係*/
 .balloon:hover+.note {
   display: block;
+}
+
+/*noteのアイコンフォント関係*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2t2vtz');
+  src:  url('fonts/icomoon.eot?2t2vtz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2t2vtz') format('truetype'),
+    url('fonts/icomoon.woff?2t2vtz') format('woff'),
+    url('fonts/icomoon.svg?2t2vtz#icomoon') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+}
+
+.icon-note:before {
+  content: "\e900";
+}
+
+a.a-SNS-icon{
+  text-decoration: none;
 }
