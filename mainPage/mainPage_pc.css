@@ -81,7 +81,7 @@ h1 {
 }
 
 /*ページtopにジャンプするやつ*/
-.pageTop_link {
+#pageTop_link {
   background: snow;
   position: fixed;
   bottom: 10%;
@@ -96,8 +96,8 @@ h1 {
 
 @keyframes slidein {
   from {
-    margin-bottom: -20%;
-    margin-right: -20%;
+    margin-bottom: -15%;
+    margin-right: -15%;
   }
 
   to {
