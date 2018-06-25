@@ -11,12 +11,12 @@ body {
 
 /*スクロールバー全体*/
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 11px;
 }
 
 /*スクロールバーの動く部分*/
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 50, .35);
+  background-color: rgba(0, 0, 0, .35);
   border-radius: 10px;
 }
 
@@ -216,10 +216,12 @@ a{
   text-decoration: none;
 }
 
+/*コピーライト表記*/
 .copyright{
   font-size: 12px;
 }
 
+/*サイドメニューの内容部分*/
 .side_menu_contents{
   display: block;
   justify-content: center;
