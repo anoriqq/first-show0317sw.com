@@ -76,7 +76,7 @@ h1 {
 .main-main-main {
   background: snow;
   margin: 15px;
-  height: 1500px;
+  height: 3000px;
   border-radius: 3px;
 }
 
@@ -182,7 +182,6 @@ h1 {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
