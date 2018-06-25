@@ -125,7 +125,7 @@ h1 {
 
 /*SNSのWebアイコンフォントの色*/
 .SNS-icon {
-  color: rgb(135, 206, 235);
+  color: skyblue;
   font-size: 45px;
   text-decoration: none;
 }
@@ -141,7 +141,7 @@ h1 {
   border-radius: 5px;
   border-color: black;
   background: pink;
-  color: white;
+  color: snow;
   font-size: 18px;
   z-index: 999;
 }
@@ -201,6 +201,7 @@ a.a-SNS-icon{
   text-decoration: none;
 }
 
+/*フッターの連絡先メール*/
 .mail{
   display: flex;
   justify-content: center;
@@ -217,4 +218,9 @@ a{
 
 .copyright{
   font-size: 12px;
+}
+
+.side_menu_contents{
+  display: block;
+  justify-content: center;
 }
