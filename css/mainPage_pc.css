@@ -106,6 +106,20 @@ h1 {
   }
 }
 
+#pageTop_link:hover {
+  background: pink;
+  color: white;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 100px;
+  height: 50px;
+  animation-duration: 1s;
+  animation-name: slidein;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
 /*サイドメニューのストライプ線関係*/
 .stripe {
   position: relative;
@@ -130,6 +144,12 @@ h1 {
   text-decoration: none;
 }
 
+.SNS-icon:hover{
+  color: pink;
+  font-size: 47px;
+  text-decoration: none;
+}
+
 /*Discordのふきだし関係*/
 .note {
   display: none;
@@ -147,7 +167,7 @@ h1 {
 }
 
 /*Discordのふきだし関係*/
-.note:after {
+.note::after {
   position: absolute;
   width: 0;
   height: 0;
@@ -193,7 +213,7 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-note:before {
+.icon-note::before {
   content: "\e900";
 }
 
