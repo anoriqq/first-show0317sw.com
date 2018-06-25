@@ -1,0 +1,221 @@
+/*ボディ*/
+body {
+  background: skyblue;
+  font-family: vdl-yotag, sans-serif;
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 0px;
+  padding: 0;
+  color: black;
+}
+
+/*スクロールバー全体*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*スクロールバーの動く部分*/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 50, .35);
+  border-radius: 10px;
+}
+
+/*ヘッダー*/
+header {
+  background: snow;
+  height: 300px;
+}
+
+/*メイン*/
+.main {
+  background: snow;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/*フッター*/
+footer {
+  background: snow;
+}
+
+/*H1*/
+h1 {
+  margin: 0px;
+  font-size: 24px;
+  height: 40px;
+  top: -10px;
+}
+
+.main-main {
+  background: skyblue;
+  width: 75%;
+}
+
+.main-side {
+  background: skyblue;
+  width: 25%;
+}
+
+/*追従するサイドバー*/
+.main-side_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+
+/*サイドバー内のメニュー*/
+.main-side_sticky_menu {
+  background: snow;
+  margin: 15px;
+  border-radius: 3px;
+}
+
+/*ど真ん中のメイン記事*/
+.main-main-main {
+  background: snow;
+  margin: 15px;
+  height: 1500px;
+  border-radius: 3px;
+}
+
+/*ページtopにジャンプするやつ*/
+#pageTop_link {
+  background: snow;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 100px;
+  height: 50px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  font-size: 26px;
+  border-radius: 5px;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: -15%;
+    margin-right: -15%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    margin-right: 0%;
+  }
+}
+
+/*サイドメニューのストライプ線関係*/
+.stripe {
+  position: relative;
+  padding: 0.3em;
+}
+
+/*サイドメニューのストライプ線関係*/
+.stripe:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: repeating-linear-gradient(-45deg, skyblue, skyblue 2px, white 2px, white 4px);
+}
+
+/*SNSのWebアイコンフォントの色*/
+.SNS-icon {
+  color: rgb(135, 206, 235);
+  font-size: 45px;
+  text-decoration: none;
+}
+
+/*Discordのふきだし関係*/
+.note {
+  display: none;
+  width: 220px;
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: black;
+  background: pink;
+  color: white;
+  font-size: 18px;
+  z-index: 999;
+}
+
+/*Discordのふきだし関係*/
+.note:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 45px;
+  margin-left: 40px;
+  border: solid transparent;
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom-color: pink;
+  border-width: 12px;
+  pointer-events: none;
+  content: " ";
+}
+
+/*Discordのふきだし関係*/
+.balloon:hover+.note {
+  display: block;
+}
+
+/*noteのアイコンフォント関係*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2t2vtz');
+  src:  url('fonts/icomoon.eot?2t2vtz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2t2vtz') format('truetype'),
+    url('fonts/icomoon.woff?2t2vtz') format('woff'),
+    url('fonts/icomoon.svg?2t2vtz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-note:before {
+  content: "\e900";
+}
+
+a.a-SNS-icon{
+  text-decoration: none;
+}
+
+.mail{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  margin: 0px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.copyright{
+  font-size: 12px;
+}
