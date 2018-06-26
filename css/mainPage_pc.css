@@ -302,7 +302,6 @@ a{
 .about-text{
   position: relative;
   left: 30px;
-  text-align: left;
   margin: auto 20px;
   
 }
@@ -312,8 +311,16 @@ a{
   font-size: 24px;
   line-height: 22px;
   letter-spacing: -1px;
+  text-align: left;
 }
 
 h2{
   margin-bottom: 0px;
+}
+
+hr{
+  border-width: 0 0 6px;
+  border-style: solid;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
+  width: 300px;
 }
