@@ -1,0 +1,31 @@
+.main-contents {
+  /*メインのネタ1個分*/
+  margin: 10px 10px 50px;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.main-main-main {
+  /*ど真ん中のメイン記事*/
+  background: snow;
+  margin: 15px;
+  border-radius: 3px;
+  z-index: 999;
+  padding: 10px;
+}
+
+.about-text {
+  position: relative;
+  left: 30px;
+  margin: auto 20px;
+}
+
+.about-img {
+  /**/
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  left: 20px;
+}

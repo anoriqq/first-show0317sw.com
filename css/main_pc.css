@@ -1,132 +1,138 @@
-/*ボディ*/
 body {
+  /*ボディ*/
   background: skyblue;
   font-family: vdl-yotag, sans-serif;
   text-align: center;
   letter-spacing: -1px;
   margin: 0px;
-  padding: 0;
+  padding: 0px;
   color: black;
 }
 
-/*スクロールバー全体*/
 ::-webkit-scrollbar {
+  /*スクロールバー全体*/
   width: 11px;
 }
 
-/*スクロールバーの動く部分*/
 ::-webkit-scrollbar-thumb {
+  /*スクロールバーの動く部分*/
   background-color: rgba(0, 0, 0, .35);
   border-radius: 10px;
 }
 
-/*ヘッダーの上にある画像*/
-.header_image{
-  background: skyblue;
+.header_image {
+  /*ヘッダーの上にある画像*/
   height: 500px;
   width: 100%;
+  transform: rotate(180deg);
+  object-fit: cover;
 }
 
-/*ヘッダー*/
 header {
+  /*ヘッダー*/
   background: cornflowerblue;
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  z-index: 999;
   padding: 10px 0px;
 }
 
-header.fixed{
+header.fixed {
+  /*ヘッダーが固定されたとき*/
   position: fixed;
   top: -1px;
+  z-index: 999;
 }
 
-li{
-  list-style: none;
-}
-
-ul{
+ul {
+  /*項目の順序なしリスト*/
   padding: 0px;
   margin: 0px;
 }
 
-.top_nav{
-  margin-right: 30px;
-  display: flex;
+li {
+  /*箇条書きリスト*/
+  list-style: none;
 }
 
-.nav_menu{
+.top_nav {
+  /*ヘッダーのメニュー*/
+  margin-right: 30px;
+}
+
+.nav_menu {
+  /*top_navの中身*/
   margin: auto 8px;
 }
 
-.flex{
+.flex {
+  /*横並びの親要素*/
   display: flex;
 }
 
-/*メイン*/
 .main {
+  /*メイン*/
   background: snow;
   width: 75%;
   margin: 70px auto 0px;
   justify-content: center;
 }
 
-/*フッター*/
 footer {
+  /*フッター*/
   background: cornflowerblue;
 }
 
-/*H1*/
 h1 {
+  /*H1*/
   margin: 0px 10px;
   font-size: 24px;
   height: 40px;
   top: -10px;
 }
 
-.main-main {
+main {
+  /*中央のメイン枠*/
   background: skyblue;
   width: 60%;
+  height: auto;
+}
+
+iframe{
+  /*<iframe>タグ*/
+  width: 100%;
 }
 
 .main-side {
+  /*メインの左側にあるサイドバー*/
   background: skyblue;
   width: 20%;
 }
 
-.main_index{
+.main_index {
+  /*メインの右側にある目次*/
   background: skyblue;
   width: 20%;
   justify-content: center;
 }
 
-/*追従するサイドバー*/
 .main-side_sticky {
+  /*追従するサイドバー*/
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
 }
 
-/*サイドバー内のメニュー*/
 .main-side_sticky_menu {
+  /*サイドバー内のメニュー*/
   background: snow;
   margin: 15px;
   border-radius: 3px;
 }
 
-/*ど真ん中のメイン記事*/
-.main-main-main {
-  background: snow;
-  margin: 15px;
-  border-radius: 3px;
-  z-index: 999;
-  padding: 10px;
-}
-
-/*ページtopにジャンプするやつ*/
 #pageTop_link {
+  /*ページtopにジャンプするやつ*/
   background: snow;
   position: fixed;
   bottom: 10%;
@@ -135,9 +141,14 @@ h1 {
   height: 50px;
   font-size: 26px;
   border-radius: 5px;
+  /*アニメーション用*/
+  transition: margin-right .5s, visibility .5s;
+  margin-right: -15%;
+  visibility: hidden;
 }
 
 #pageTop_link:hover {
+  /*ページtopにジャンプするやつがホバーしたときのやつ*/
   background: pink;
   color: white;
   position: fixed;
@@ -149,25 +160,20 @@ h1 {
   border-radius: 5px;
 }
 
-#pageTop_link{
-  transition: margin-right .5s, visibility .5s;
-  margin-right: -15%;
-  visibility: hidden;
-}
-
-#pageTop_link.show {  
+#pageTop_link.show {
+  /*ページtopにジャンプするやつがアニメーションしたときのやつ*/
   margin-right: 0%;
   visibility: visible;
 }
 
-/*サイドメニューのストライプ線関係*/
 .stripe {
+  /*サイドメニューのストライプ線関係*/
   position: relative;
   padding: 0.3em;
 }
 
-/*サイドメニューのストライプ線関係*/
 .stripe:after {
+  /*サイドメニューのストライプ線関係*/
   content: '';
   position: absolute;
   left: 0;
@@ -177,25 +183,25 @@ h1 {
   background: repeating-linear-gradient(-45deg, skyblue, skyblue 2px, white 2px, white 4px);
 }
 
-/*SNSのWebアイコンフォントの色*/
 .SNS-icon {
+  /*SNSのWebアイコンフォント*/
   color: skyblue;
   font-size: 45px;
   text-decoration: none;
 }
 
-.SNS-icon:hover{
+.SNS-icon:hover {
+  /*SNSWebアイコンフォントをホバーしたときの変化分*/
   color: pink;
-  font-size: 47px;
   text-decoration: none;
 }
 
-/*Discordのふきだし関係*/
 .note {
+  /*Discordのふきだしの枠*/
   display: none;
   width: 220px;
   position: absolute;
-  top: 160px;
+  top: 155px;
   left: 150px;
   padding: 5px;
   border-radius: 5px;
@@ -206,14 +212,14 @@ h1 {
   z-index: 999;
 }
 
-/*Discordのふきだし関係*/
 .note::after {
+  /*Discordのふきだしの三角*/
   position: absolute;
   width: 0;
   height: 0;
   left: 0;
-  bottom: 45px;
-  margin-left: 40px;
+  bottom: 35px;
+  margin-left: 30px;
   border: solid transparent;
   border-color: rgba(0, 0, 0, 0);
   border-bottom-color: pink;
@@ -222,24 +228,22 @@ h1 {
   content: " ";
 }
 
-/*Discordのふきだし関係*/
 .balloon:hover+.note {
+  /*Discordのふきだし関係*/
   display: block;
 }
 
-/*noteのアイコンフォント関係*/
 @font-face {
+  /*noteのアイコンフォント関係*/
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?2t2vtz');
-  src:  url('fonts/icomoon.eot?2t2vtz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?2t2vtz') format('truetype'),
-    url('fonts/icomoon.woff?2t2vtz') format('woff'),
-    url('fonts/icomoon.svg?2t2vtz#icomoon') format('svg');
+  src: url('fonts/icomoon.eot?2t2vtz');
+  src: url('fonts/icomoon.eot?2t2vtz#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?2t2vtz') format('truetype'), url('fonts/icomoon.woff?2t2vtz') format('woff'), url('fonts/icomoon.svg?2t2vtz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   font-style: normal;
@@ -247,78 +251,61 @@ h1 {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-note::before {
+  /*note用のアイコン*/
   content: "\e900";
 }
 
-a.a-SNS-icon{
+a.a-SNS-icon {
+  /*SNSアイコン用の<a>タグ*/
   text-decoration: none;
 }
 
-/*フッターの連絡先メール*/
-.mail{
-  display: flex;
+.mail {
+  /*フッターの連絡先メール*/
   justify-content: center;
 }
 
-p{
+p {
+  /*<p>タグ*/
   margin: 0px;
 }
 
-a{
+a {
+  /*<a>タグ*/
   color: black;
   text-decoration: none;
 }
 
-/*コピーライト表記*/
-.copyright{
+.copyright {
+  /*コピーライト表記*/
   font-size: 12px;
 }
 
-/*サイドメニューの内容部分*/
-.side_menu_contents{
+.side_menu_contents {
+  /*サイドメニューの内容部分*/
   display: block;
   justify-content: center;
 }
 
-.logo{
+.logo {
+  /*ヘッダーのロゴ*/
   margin: auto 20px;
   font-size: 30px;
 }
 
-.about-img{
-  height: 200px;
-  border-radius: 10px;
-  position: relative;
-  left: 20px;
-}
-
-.about-text{
-  position: relative;
-  left: 30px;
-  margin: auto 20px;
-  
-}
-
-.main-contents{
-  margin: 10px 10px 50px;
-  font-size: 24px;
-  line-height: 22px;
-  letter-spacing: -1px;
-  text-align: left;
-}
-
-h2{
+h2 {
+  /*<h2>タグ*/
   margin-bottom: 0px;
 }
 
-hr{
+hr {
+  /*ネタの区切りに使う<hr>タグ*/
   border-width: 0 0 6px;
   border-style: solid;
   border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
