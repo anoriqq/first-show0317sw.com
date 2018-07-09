@@ -289,7 +289,6 @@ a {
 
 .side_menu_contents {
   /*サイドメニューの内容部分*/
-  display: block;
   justify-content: center;
 }
 
