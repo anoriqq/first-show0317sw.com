@@ -31,7 +31,7 @@
 
   // 子画面のコンテンツサイズに合わせてサイズを変更する関数
   function changeParentHeight() {
-    elm.style.height = elm.contentWindow.document.body.scrollHeight + "px";
+    elm.style.height = elm.contentWindow.document.body.scrollHeight + 30 + "px";
   }
 
   /*親画面 iframe の高さを変更するイベント*/
