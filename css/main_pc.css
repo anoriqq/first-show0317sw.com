@@ -92,6 +92,11 @@ h1 {
   top: -10px;
 }
 
+iframe {
+  /*<iframe>タグ*/
+  width: 100%;
+}
+
 main {
   /*中央のメイン枠*/
   background: skyblue;
@@ -99,36 +104,24 @@ main {
   height: auto;
 }
 
-iframe{
-  /*<iframe>タグ*/
-  width: 100%;
-}
-
-.main-side {
+.sideBar_left {
   /*メインの左側にあるサイドバー*/
   background: skyblue;
   width: 20%;
 }
 
-.main_index {
+.sideBar_right {
   /*メインの右側にある目次*/
   background: skyblue;
   width: 20%;
   justify-content: center;
 }
 
-.main-side_sticky {
+.sticky {
   /*追従するサイドバー*/
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
-}
-
-.main-side_sticky_menu {
-  /*サイドバー内のメニュー*/
-  background: snow;
-  margin: 15px;
-  border-radius: 3px;
 }
 
 #pageTop_link {
@@ -285,11 +278,6 @@ a {
 .copyright {
   /*コピーライト表記*/
   font-size: 12px;
-}
-
-.side_menu_contents {
-  /*サイドメニューの内容部分*/
-  justify-content: center;
 }
 
 .logo {

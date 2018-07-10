@@ -48,76 +48,9 @@
   </header>
 
   <div class="main flex">
-    <div class="main-side">
-      <div class="main-side_sticky">
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">SNS LINKS</h1>
-          <div class="side_menu_contents">
-            <a href="https://twitter.com/show0317sw" target="_blank">
-              <i class="fab fa-twitter-square SNS-icon"></i>
-            </a>
-            <a href="https://github.com/show0317sw" target="_blank">
-              <i class="fab fa-github-square SNS-icon"></i>
-            </a>
-            <a href="https://www.facebook.com/show0317sw" target="_blank">
-              <i class="fab fa-facebook-square SNS-icon"></i>
-              </i>
-            </a>
-            <a href="https://www.instagram.com/show0317sw" target="_blank">
-              <i class="fab fa-instagram SNS-icon"></i>
-            </a>
-            <a href="https://steamcommunity.com/profiles/76561198314618166" target="_blank">
-              <i class="fab fa-steam-square SNS-icon"></i>
-            </a>
-            <a href="https://soundcloud.com/user-234424725" target="_blank">
-              <i class="fab fa-soundcloud SNS-icon"></i>
-            </a>
-            <a href="https://www.twitch.tv/show0317sw" target="_blank">
-              <i class="fab fa-twitch SNS-icon"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCXW5OILLnuDhYsckwOBAPTg" target="_blank">
-              <i class="fab fa-youtube-square SNS-icon"></i>
-            </a>
-            <a href="https://discordapp.com/channels/@me" target="_blank">
-              <i class="fab fa-discord SNS-icon balloon"></i>
-              <p class="note">しょう/show0317sw#6540</p>
-            </a>
-            <a href="https://note.mu/show0317sw" class="a-SNS-icon" target="_blank">
-              <span class="icon-note SNS-icon"></span>
-            </a>
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">QUESTIONS</h1>
-          <div class="side_menu_contents">
-            <a href="https://peing.net/ja/show0317sw?event=0" target="_blank">質問箱</a>
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">TAGS</h1>
-          <div class="side_menu_contents">
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">ARCHIVES</h1>
-          <div class="side_menu_contents">
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">UPDATES</h1>
-          <div class="side_menu_contents">
-            <a href="article/0_newPage/newPage.html">さいしんきじ</a>
-            <a href="article\0_template\template.html">テンプレート</a>
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">WEBMASTER</h1>
-          <div class="side_menu_contents flex">
-            <img src="image/show0317sw.png" alt="png" height="50px" width="50px">
-            <p>管理者の人</p>
-            <a href="article/1_self_introduction/self_introduction.html">詳しくはこっち</a>
-          </div>
-        </div>
+    <div class="sideBar_left">
+      <div class="sticky">
+        <iframe src="test/side_menu.html" frameborder="0"></iframe>
       </div>
     </div>
 
@@ -125,8 +58,8 @@
       <iframe id="main-body" src="article/1_self_introduction/self_introduction.html" frameborder="0"></iframe>
     </main>
 
-    <nav class="main_index">
-      <div class="main-side_sticky">
+    <nav class="sideBar_right">
+      <div class="sticky">
         <h2>INDEX</h2>
         <ul>
           <li>
@@ -138,10 +71,8 @@
           <li>
             <a href="#hobby">HOBBY</a>
           </li>
-          <li></li>
-          <li></li>
         </ul>
-        <h4>最終更新日:2018-07-09</h4>
+        <h4>最終更新日:2018-07-10</h4>
       </div>
     </nav>
   </div>
@@ -159,6 +90,11 @@
   </footer>
 
   <script type="text/javascript" src="js/mainPage.js"></script>
+  <script>
+    let myiframe = document.getElementById('main-body');
+    let height = document.getElementById('main-body').contentWindow.document.body.scrollHeight;
+    myiframe.style.height = height + 'px';
+  </script>
 </body>
 
 </html>
