@@ -20,6 +20,15 @@ body {
   border-radius: 10px;
 }
 
+#loader {
+  /*ローダー*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .header_image {
   /*ヘッダーの上にある画像*/
   height: 500px;

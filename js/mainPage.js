@@ -51,4 +51,10 @@
     }, 100);
   };
 
+  //ローダー
+  document.body.onload = function () {
+    const element = document.getElementById('loader');
+    element.style.display = 'none';
+  };
+
 })();
