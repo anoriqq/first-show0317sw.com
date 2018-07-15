@@ -1,6 +1,5 @@
 body {
   /*ボディ*/
-  background: skyblue;
   color: black;
   font-family: vdl-yotag, sans-serif;
   text-align: center;
@@ -32,7 +31,7 @@ body {
   background: repeating-linear-gradient(-45deg, skyblue, skyblue 2px, white 2px, white 4px);
 }
 
-.sideBarContents{
+.sideBarContents {
   padding: 10px;
 }
 
@@ -54,8 +53,8 @@ body {
   display: none;
   width: 220px;
   position: absolute;
-  top: 155px;
-  left: 150px;
+  top: 150px;
+  left: 40px;
   padding: 5px;
   border-radius: 5px;
   border-color: black;
@@ -72,7 +71,7 @@ body {
   height: 0;
   left: 0;
   bottom: 35px;
-  margin-left: 30px;
+  margin-left: 140px;
   border: solid transparent;
   border-color: rgba(0, 0, 0, 0);
   border-bottom-color: pink;
@@ -120,6 +119,10 @@ a {
   text-decoration: none;
 }
 
-.flex{
+.flex {
   display: flex;
+}
+
+.block{
+  display: block;
 }
