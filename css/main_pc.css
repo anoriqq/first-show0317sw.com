@@ -35,12 +35,12 @@ body {
   width: 100%;
   transform: rotate(180deg);
   object-fit: cover;
+  margin-bottom: -10px;
 }
 
 header {
   /*ヘッダー*/
   background: cornflowerblue;
-  display: flex;
   justify-content: space-between;
   width: 100%;
   position: absolute;
@@ -54,15 +54,10 @@ header.fixed {
   z-index: 999;
 }
 
-ul {
-  /*項目の順序なしリスト*/
-  padding: 0px;
-  margin: 0px;
-}
-
-li {
-  /*箇条書きリスト*/
-  list-style: none;
+.logo {
+  /*ヘッダーのロゴ*/
+  margin: auto 20px;
+  font-size: 30px;
 }
 
 .top_nav {
@@ -75,35 +70,12 @@ li {
   margin: auto 8px;
 }
 
-.flex {
-  /*横並びの親要素*/
-  display: flex;
-}
-
 .main {
   /*メイン*/
   background: snow;
   width: 75%;
   margin: 70px auto 0px;
   justify-content: center;
-}
-
-footer {
-  /*フッター*/
-  background: cornflowerblue;
-}
-
-h1 {
-  /*H1*/
-  margin: 0px 10px;
-  font-size: 24px;
-  height: 40px;
-  top: -10px;
-}
-
-iframe {
-  /*<iframe>タグ*/
-  width: 100%;
 }
 
 main {
@@ -126,11 +98,19 @@ main {
   justify-content: center;
 }
 
-.sticky {
-  /*追従するサイドバー*/
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
+footer {
+  /*フッター*/
+  background: cornflowerblue;
+}
+
+.mail {
+  /*フッターの連絡先メール*/
+  justify-content: center;
+}
+
+.copyright {
+  /*コピーライト表記*/
+  font-size: 12px;
 }
 
 #pageTop_link {
@@ -168,131 +148,22 @@ main {
   visibility: visible;
 }
 
-.stripe {
-  /*サイドメニューのストライプ線関係*/
-  position: relative;
-  padding: 0.3em;
+/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.flex {
+  /*横並びの親要素*/
+  display: flex;
 }
 
-.stripe:after {
-  /*サイドメニューのストライプ線関係*/
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7px;
-  background: repeating-linear-gradient(-45deg, skyblue, skyblue 2px, white 2px, white 4px);
-}
-
-.SNS-icon {
-  /*SNSのWebアイコンフォント*/
-  color: skyblue;
-  font-size: 45px;
-  text-decoration: none;
-}
-
-.SNS-icon:hover {
-  /*SNSWebアイコンフォントをホバーしたときの変化分*/
-  color: pink;
-  text-decoration: none;
-}
-
-.note {
-  /*Discordのふきだしの枠*/
-  display: none;
-  width: 220px;
-  position: absolute;
-  top: 155px;
-  left: 150px;
-  padding: 5px;
-  border-radius: 5px;
-  border-color: black;
-  background: pink;
-  color: snow;
-  font-size: 18px;
-  z-index: 999;
-}
-
-.note::after {
-  /*Discordのふきだしの三角*/
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0;
-  bottom: 35px;
-  margin-left: 30px;
-  border: solid transparent;
-  border-color: rgba(0, 0, 0, 0);
-  border-bottom-color: pink;
-  border-width: 12px;
-  pointer-events: none;
-  content: " ";
-}
-
-.balloon:hover+.note {
-  /*Discordのふきだし関係*/
-  display: block;
-}
-
-@font-face {
-  /*noteのアイコンフォント関係*/
-  font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?2t2vtz');
-  src: url('fonts/icomoon.eot?2t2vtz#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?2t2vtz') format('truetype'), url('fonts/icomoon.woff?2t2vtz') format('woff'), url('fonts/icomoon.svg?2t2vtz#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-note::before {
-  /*note用のアイコン*/
-  content: "\e900";
-}
-
-a.a-SNS-icon {
-  /*SNSアイコン用の<a>タグ*/
-  text-decoration: none;
-}
-
-.mail {
-  /*フッターの連絡先メール*/
-  justify-content: center;
-}
-
-p {
-  /*<p>タグ*/
+ul {
+  /*項目の順序なしリスト*/
+  padding: 0px;
   margin: 0px;
 }
 
-a {
-  /*<a>タグ*/
-  color: black;
-  text-decoration: none;
-}
-
-.copyright {
-  /*コピーライト表記*/
-  font-size: 12px;
-}
-
-.logo {
-  /*ヘッダーのロゴ*/
-  margin: auto 20px;
-  font-size: 30px;
+li {
+  /*箇条書きリスト*/
+  list-style: none;
 }
 
 h2 {
@@ -306,4 +177,35 @@ hr {
   border-style: solid;
   border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
   width: 300px;
+}
+
+p {
+  /*<p>タグ*/
+  margin: 0px;
+}
+
+a {
+  /*<a>タグ*/
+  color: black;
+  text-decoration: none;
+}
+
+.sticky {
+  /*追従するサイドバー*/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+}
+
+iframe {
+  /*<iframe>タグ*/
+  width: 100%;
+}
+
+h1 {
+  /*H1*/
+  margin: 0px 10px;
+  font-size: 24px;
+  height: 40px;
+  top: -10px;
 }

@@ -28,7 +28,7 @@
 
   <img src="image\header.jpeg" class="header_image">
 
-  <header id="header">
+  <header id="header" class="flex">
     <a href="https://show0317sw.com">
       <h1 class="logo">
         <img src="image/pageIcon.png" alt="png">show0317swのほぼ全部</h1>
@@ -59,12 +59,12 @@
   <div class="main flex">
     <div class="sideBar_left">
       <div class="sticky">
-        <iframe id="sideMenu" src="test/side_menu.html" frameborder="0"></iframe>
+        <iframe id="sideMenu" src="sideBarMenu/sideBarMenu.html" frameborder="0" height="600px"></iframe>
       </div>
     </div>
 
     <main>
-      <iframe id="main-body" src="article/1_self_introduction/self_introduction.html" frameborder="0"></iframe>
+      <iframe id="main-body" src="article/1_self_introduction/self_introduction.html" frameborder="0" height="1250px"></iframe>
     </main>
 
     <nav class="sideBar_right">
@@ -72,13 +72,13 @@
         <h2>INDEX</h2>
         <ul>
           <li>
-            <a href="#about">ABOUT</a>
+            <a href="">ABOUT</a>
           </li>
           <li>
-            <a href="#profile">PROFILE</a>
+            <a href="">PROFILE</a>
           </li>
           <li>
-            <a href="#hobby">HOBBY</a>
+            <a href="">HOBBY</a>
           </li>
         </ul>
         <h4>最終更新日:2018-07-15</h4>
@@ -99,11 +99,6 @@
   </footer>
 
   <script type="text/javascript" src="js/mainPage.js"></script>
-  <script>
-    let myiframe = document.getElementById('main-body');
-    let height = document.getElementById('main-body').contentWindow.document.body.scrollHeight;
-    myiframe.style.height = height + 'px';
-  </script>
 </body>
 
 </html>
