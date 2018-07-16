@@ -3,23 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta name="author" content="show0317sw">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=1">
   <meta name="apple-mobile-web-app-capable" content="no">
   <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="show0317swのほぼ全部">
+  <meta name="keywords" content="show0317sw,ブログ">
 
   <link rel="stylesheet" media="screen and (min-device-width: 1025px)" href="../../css/main_pc.css">
   <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="../../css/main_mobile.css">
+  <link rel="stylesheet" href="">
   <link rel="shortcut icon" href="../../image/pageIcon.png" type="image/png">
   <link rel="apple-touch-icon" href="../../image/pageIcon.png" type="image/png">
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
   <title>show0317swのほぼ全部</title>
 </head>
 
 <body>
+  <div id="loader">
+    <p>loading...</p>
+  </div>
+
   <img src="../../image\header.jpeg" class="header_image">
 
-  <header id="header">
+  <header id="header" class="flex">
     <a href="https://show0317sw.com">
       <h1 class="logo">
         <img src="../../image/pageIcon.png" alt="png">show0317swのほぼ全部</h1>
@@ -48,97 +57,33 @@
   </header>
 
   <div class="main flex">
-    <div class="main-side">
-      <div class="main-side_sticky">
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">SNS LINKS</h1>
-          <div class="side_menu_contents">
-            <a href="https://twitter.com/show0317sw" target="_blank">
-              <i class="fab fa-twitter-square SNS-icon"></i>
-            </a>
-            <a href="https://github.com/show0317sw" target="_blank">
-              <i class="fab fa-github-square SNS-icon"></i>
-            </a>
-            <a href="https://www.facebook.com/show0317sw" target="_blank">
-              <i class="fab fa-facebook-square SNS-icon"></i>
-              </i>
-            </a>
-            <a href="https://www.instagram.com/show0317sw" target="_blank">
-              <i class="fab fa-instagram SNS-icon"></i>
-            </a>
-            <a href="https://steamcommunity.com/profiles/76561198314618166" target="_blank">
-              <i class="fab fa-steam-square SNS-icon"></i>
-            </a>
-            <a href="https://soundcloud.com/user-234424725" target="_blank">
-              <i class="fab fa-soundcloud SNS-icon"></i>
-            </a>
-            <a href="https://www.twitch.tv/show0317sw" target="_blank">
-              <i class="fab fa-twitch SNS-icon"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCXW5OILLnuDhYsckwOBAPTg" target="_blank">
-              <i class="fab fa-youtube-square SNS-icon"></i>
-            </a>
-            <a href="https://discordapp.com/channels/@me" target="_blank">
-              <i class="fab fa-discord SNS-icon balloon"></i>
-              <p class="note">しょう/show0317sw#6540</p>
-            </a>
-            <a href="https://note.mu/show0317sw" class="a-SNS-icon" target="_blank">
-              <span class="icon-note SNS-icon"></span>
-            </a>
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">QUESTIONS</h1>
-          <div class="side_menu_contents">
-            <a href="https://peing.net/ja/show0317sw?event=0" target="_blank">質問箱</a>
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">TAGS</h1>
-          <div class="side_menu_contents">
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">ARCHIVES</h1>
-          <div class="side_menu_contents">
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">UPDATES</h1>
-          <div class="side_menu_contents">
-            <a href="../1_self_introduction/">さいしんきじ</a>
-          </div>
-        </div>
-        <div class="main-side_sticky_menu">
-          <h1 class="stripe">WEBMASTER</h1>
-          <div class="side_menu_contents flex">
-            <img src="image/show0317sw.png" alt="png" height="50px" width="50px">
-            <p>管理者の人</p>
-            <p><a href="article/1_self_introduction/self_introduction.html">詳しくはこっち</a></p>
-          </div>
-        </div>
+    <div class="sideBar_left">
+      <div class="sticky">
+        <iframe id="sideMenu" src="../../sideBarMenu/sideBarMenu.html" frameborder="0" height="10000px"></iframe>
       </div>
     </div>
 
-    <main></main>
+    <main>
+      <div class="mainSpace">
+        <p>ここに記事</p>
+      </div>
+    </main>
 
-    <nav class="main_index">
-      <div class="main-side_sticky">
+    <nav class="sideBar_right">
+      <div class="sticky">
         <h2>INDEX</h2>
         <ul>
           <li>
-            <a href="#about">ABOUT</a>
+            <a href="">INDEX_1</a>
           </li>
           <li>
-            <a href="#profile">PROFILE</a>
+            <a href="">INDEX_2</a>
           </li>
           <li>
-            <a href="#hobby">HOBBY</a>
+            <a href="">INDEX_3</a>
           </li>
-          <li></li>
-          <li></li>
         </ul>
-        <h4>最終更新日:2018-07-09</h4>
+        <h4 id="lastUpdate"></h4>
       </div>
     </nav>
   </div>
@@ -155,7 +100,7 @@
     <p class="copyright">&copy; 2018 show0317sw</p>
   </footer>
 
-  <script type="text/javascript" src="js/mainPage.js"></script>
+  <script type="text/javascript" src="../../js/mainPage.js"></script>
 </body>
 
 </html>

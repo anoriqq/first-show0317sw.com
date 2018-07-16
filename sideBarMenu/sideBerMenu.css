@@ -117,12 +117,28 @@ a {
   /*<a>タグ*/
   color: black;
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .flex {
   display: flex;
 }
 
-.block{
+.block {
   display: block;
+}
+
+.authorImage {
+  width: 30%;
+  height: 50px;
+}
+
+.authorText {
+  width: 70%;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
 }

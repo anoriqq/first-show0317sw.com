@@ -1,12 +1,15 @@
 body {
   /*ボディ*/
   background: skyblue;
-  font-family: vdl-yotag, sans-serif;
   text-align: center;
   letter-spacing: -1px;
   margin: 0px;
   padding: 0px;
   color: black;
+  /*フォント*/
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -25,8 +28,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .header_image {
@@ -199,4 +202,24 @@ h1 {
   font-size: 24px;
   height: 40px;
   top: -10px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
+.mainSpace {
+  /*ど真ん中のメイン記事*/
+  background: snow;
+  margin: 15px;
+  border-radius: 3px;
+  z-index: 999;
+  padding: 10px;
+}
+
+.main-contents {
+  /*メインのネタ1個分*/
+  margin: 10px 10px 50px;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -1px;
+  text-align: left;
 }

@@ -1,0 +1,14 @@
+.about-img {
+  /*ABOUTの画像*/
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  left: 20px;
+}
+
+.about-text {
+  /*ABOUTの文字部分*/
+  position: relative;
+  left: 30px;
+  margin: auto 20px;
+}
