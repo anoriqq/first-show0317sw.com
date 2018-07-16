@@ -44,7 +44,7 @@ body {
 
 .SNS-icon:hover {
   /*SNSWebアイコンフォントをホバーしたときの変化分*/
-  color: pink;
+  color: orange;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   border-color: black;
-  background: pink;
+  background: orange;
   color: snow;
   font-size: 18px;
   z-index: 999;
@@ -74,7 +74,7 @@ body {
   margin-left: 140px;
   border: solid transparent;
   border-color: rgba(0, 0, 0, 0);
-  border-bottom-color: pink;
+  border-bottom-color: orange;
   border-width: 12px;
   pointer-events: none;
   content: " ";

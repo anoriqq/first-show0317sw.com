@@ -36,14 +36,13 @@ body {
   /*ヘッダーの上にある画像*/
   height: 500px;
   width: 100%;
-  transform: rotate(180deg);
   object-fit: cover;
   margin-bottom: -10px;
 }
 
 header {
   /*ヘッダー*/
-  background: cornflowerblue;
+  background: black;
   justify-content: space-between;
   width: 100%;
   position: absolute;
@@ -61,6 +60,7 @@ header.fixed {
   /*ヘッダーのロゴ*/
   margin: auto 20px;
   font-size: 30px;
+  color: white;
 }
 
 .top_nav {
@@ -101,7 +101,8 @@ main {
 
 footer {
   /*フッター*/
-  background: cornflowerblue;
+  background: black;
+  color: white;
 }
 
 .mail {
@@ -132,7 +133,7 @@ footer {
 
 #pageTop_link:hover {
   /*ページtopにジャンプするやつがホバーしたときのやつ*/
-  background: pink;
+  background: orange;
   color: white;
 }
 
