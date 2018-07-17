@@ -35,22 +35,48 @@
 
   /*サイドバー高さ自動変更*/
   // 子画面の要素を取得
-  var elm = document.getElementById("sideMenu");
+  var sideMenu = document.getElementById("sideMenu");
 
   // 子画面のコンテンツサイズに合わせてサイズを変更する関数
   function changeParentHeight() {
-    elm.style.height = elm.contentWindow.document.body.scrollHeight + 30 + "px";
+    sideMenu.style.height = sideMenu.contentWindow.document.body.scrollHeight + 30 + "px";
   }
 
   // 親画面 iframe の高さを変更するイベント
   // 1. 子画面の読み込み完了時点で処理を行う
-  elm.contentWindow.onload = function () {
+  sideMenu.contentWindow.onload = function () {
     changeParentHeight();
   };
 
   // 2. 子画面のウィンドウサイズ変更が完了した時点で処理を行う
   var timer = 0;
-  elm.contentWindow.onresize = function () {
+  sideMenu.contentWindow.onresize = function () {
+    if (timer > 0) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(function () {
+      changeParentHeight();
+    }, 100);
+  };
+
+  /*フッター高さ自動変更*/
+  // 子画面の要素を取得
+  var footer = document.getElementById("footer");
+
+  // 子画面のコンテンツサイズに合わせてサイズを変更する関数
+  function changeParentHeight() {
+    footer.style.height = footer.contentWindow.document.body.scrollHeight + 30 + "px";
+  }
+
+  // 親画面 iframe の高さを変更するイベント
+  // 1. 子画面の読み込み完了時点で処理を行う
+  footer.contentWindow.onload = function () {
+    changeParentHeight();
+  };
+
+  // 2. 子画面のウィンドウサイズ変更が完了した時点で処理を行う
+  var timer = 0;
+  footer.contentWindow.onresize = function () {
     if (timer > 0) {
       clearTimeout(timer);
     }

@@ -1,0 +1,22 @@
+body{
+  color: white;
+}
+
+.mail {
+  /*フッターの連絡先メール*/
+  justify-content: center;
+}
+
+.address{
+  font-size: 16px;
+}
+
+.copyright {
+  /*コピーライト表記*/
+  font-size: 12px;
+  justify-content: center;
+}
+
+a{
+  color: white !important;
+}

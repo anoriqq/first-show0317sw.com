@@ -111,17 +111,6 @@ main {
 footer {
   /*フッター*/
   background: black;
-  color: white;
-}
-
-.mail {
-  /*フッターの連絡先メール*/
-  justify-content: center;
-}
-
-.copyright {
-  /*コピーライト表記*/
-  font-size: 12px;
 }
 
 #pageTop_link {
