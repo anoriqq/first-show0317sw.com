@@ -28,8 +28,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  background: palegreen;
+  /*アニメーション用*/
+  transition: height 1s, opacity 1s;
+  height: 100vh;
+  opacity: 1;
+}
+
+#loader.none {
+  /*ローダーが消えるとき*/
+  height: 0px;
+  opacity: 0;
 }
 
 .header_image {
@@ -131,16 +140,16 @@ footer {
   visibility: hidden;
 }
 
-#pageTop_link:hover {
-  /*ページtopにジャンプするやつがホバーしたときのやつ*/
-  background: orange;
-  color: white;
-}
-
 #pageTop_link.show {
   /*ページtopにジャンプするやつがアニメーションしたときのやつ*/
   margin-right: 0%;
   visibility: visible;
+}
+
+#pageTop_link:hover {
+  /*ページtopにジャンプするやつがホバーしたときのやつ*/
+  background: orange;
+  color: white;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -177,6 +186,8 @@ hr {
 p {
   /*<p>タグ*/
   margin: 0px;
+  margin: 0px;
+  font-size: 24px;
 }
 
 a {
@@ -210,9 +221,8 @@ h1 {
 .mainSpace {
   /*ど真ん中のメイン記事*/
   background: snow;
-  margin: 15px;
   border-radius: 3px;
-  z-index: 999;
+  margin: 15px;
   padding: 10px;
 }
 

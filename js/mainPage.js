@@ -27,9 +27,10 @@
   }
 
   /*ローダー*/
+  const element = document.getElementById('loader');
   document.body.onload = function () {
-    const element = document.getElementById('loader');
-    element.style.display = 'none';
+    //element.style.display = 'none';
+    element.classList.add('none');
   };
 
   /*サイドバー高さ自動変更*/
