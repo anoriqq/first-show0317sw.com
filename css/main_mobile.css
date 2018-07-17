@@ -1,0 +1,21 @@
+body {
+  /*ボディ*/
+  background: skyblue;
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+  /*フォント*/
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+a {
+  /*<a>タグ*/
+  color: black;
+  text-decoration: none;
+}
