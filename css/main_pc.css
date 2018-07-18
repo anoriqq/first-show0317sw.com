@@ -46,46 +46,28 @@ body {
   height: 500px;
   width: 100%;
   object-fit: cover;
-  margin-bottom: -10px;
+  margin-bottom: -7px;
 }
 
 header {
   /*ヘッダー*/
   background: black;
-  justify-content: space-between;
-  width: 100%;
   position: absolute;
-  padding: 10px 0px;
+  width: 100%;
 }
 
 header.fixed {
   /*ヘッダーが固定されたとき*/
   position: fixed;
-  top: -1px;
+  top: 0px;
+  width: 100%;
   z-index: 999;
-}
-
-.logo {
-  /*ヘッダーのロゴ*/
-  margin: auto 20px;
-  font-size: 30px;
-  color: white;
-}
-
-.top_nav {
-  /*ヘッダーのメニュー*/
-  margin-right: 30px;
-}
-
-.nav_menu {
-  /*top_navの中身*/
-  margin: auto 8px;
 }
 
 .main {
   /*メイン*/
   width: 75%;
-  margin: 80px auto 0px;
+  margin: 100px auto 0px;
 }
 
 .sideBar_left {

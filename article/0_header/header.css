@@ -1,0 +1,17 @@
+body {
+  justify-content: space-between;
+  position: absolute;
+  width: 98%;
+  padding: 6px;
+}
+
+.logo {
+  /*ヘッダーのロゴ*/
+  margin: auto 20px;
+  font-size: 30px;
+  color: white;
+  /*フォント*/
+  font-family: vdl-yotag, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
