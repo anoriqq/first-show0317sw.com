@@ -7,7 +7,7 @@
 
   // 子画面のコンテンツサイズに合わせてサイズを変更する関数
   function changeParentHeight() {
-    footer.style.height = footer.contentWindow.document.body.scrollHeight + 30 + "px";
+    footer.style.height = footer.contentWindow.document.body.scrollHeight + 20 + "px";
   }
 
   // 親画面 iframe の高さを変更するイベント
