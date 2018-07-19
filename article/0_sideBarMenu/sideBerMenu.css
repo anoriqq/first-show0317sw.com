@@ -9,8 +9,8 @@ body {
 }
 
 .sideBarBlock {
-  background: snow;
-  margin: 10px;
+  background: white;
+  margin-bottom: 10px;
   border-radius: 4px;
 }
 
@@ -59,7 +59,7 @@ body {
   border-radius: 5px;
   border-color: black;
   background: orange;
-  color: snow;
+  color: white;
   font-size: 18px;
   z-index: 999;
 }
@@ -113,20 +113,8 @@ body {
   content: "\e900";
 }
 
-a {
-  /*<a>タグ*/
-  color: black;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.flex {
-  display: flex;
-}
-
-.block {
-  display: block;
+.author{
+  margin: 5px;
 }
 
 .authorImage {

@@ -3,6 +3,11 @@
   display: flex;
 }
 
+.block {
+  /*ブロック要素*/
+  display: block;
+}
+
 ul {
   /*項目の順序なしリスト*/
   padding: 0px;
@@ -36,7 +41,7 @@ p {
 
 a {
   /*<a>タグ*/
-  color: black;
+  color: darkblue;
   text-decoration: none;
 }
 
@@ -44,18 +49,10 @@ a {
   /*追従するサイドバー*/
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;
+  top: 100px;
 }
 
 iframe {
   /*<iframe>タグ*/
   width: 100%;
-}
-
-h1 {
-  /*H1*/
-  margin: 0px 10px;
-  font-size: 24px;
-  height: 40px;
-  top: -10px;
 }
