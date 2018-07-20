@@ -15,6 +15,7 @@ body {
 ::-webkit-scrollbar {
   /*スクロールバー全体*/
   width: 11px;
+  height: 11px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -140,4 +141,56 @@ footer {
   line-height: 22px;
   letter-spacing: -1px;
   text-align: left;
+}
+
+div.listSpace{
+  /*リスト1列分*/
+  padding-bottom: 15px;
+}
+
+.listMain{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+p.listTitle{
+  /*リストのタイトル*/
+  text-align: left;
+}
+
+.oneContentSpace{
+  /*右の記事とのpadding*/
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.thumbnailSpace {
+  /*サムネ画像とタイトルを含むリンクスペース*/
+  position: relative;
+  height: 118px;
+  width: 210px;
+  border: 3px solid skyblue;
+}
+
+.thumbnail {
+  /*サムネイル*/
+  height: 100%;
+  width: 100%;
+}
+
+.thumbnailTextSpace {
+  /*サムネイル上のタイトルテキストの下*/
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -100%);
+}
+
+p.thumbnailText {
+  /*サムネイル上のタイトル*/
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
 }
