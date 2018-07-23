@@ -16,7 +16,7 @@
       header.classList.remove('fixed');
     }
   }
-  setInterval(height, 10); //10msに一回"height"関数を実行
+  setInterval(height, 1); //10msに一回"height"関数を実行
 
   /*トップに戻るリンクの動作処理関数*/
   pageTop_link.onclick = function () {
