@@ -144,22 +144,22 @@ footer {
   text-align: left;
 }
 
-div.listSpace{
+div.listSpace {
   /*リスト1列分*/
   padding-bottom: 15px;
 }
 
-.listMain{
+.listMain {
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-p.listTitle{
+p.listTitle {
   /*リストのタイトル*/
   text-align: left;
 }
 
-.oneContentSpace{
+.oneContentSpace {
   /*右の記事とのpadding*/
   margin-right: 5px;
   margin-bottom: 5px;
@@ -194,4 +194,15 @@ p.thumbnailText {
   font-size: 24px;
   font-weight: bold;
   color: black;
+}
+
+ul.sideIndex {
+  /*目次用,項目の順序なしリスト*/
+  padding: 0px;
+  margin: 0px;
+}
+
+li.sideIndex {
+  /*目次用,箇条書きリスト*/
+  list-style: none;
 }
