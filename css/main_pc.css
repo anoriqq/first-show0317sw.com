@@ -7,9 +7,7 @@ body {
   padding: 0px;
   color: black;
   /*フォント*/
-  font-family: dnp-shuei-gothic-gin-std, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'メイリオ';
 }
 
 ::-webkit-scrollbar {
@@ -191,29 +189,9 @@ p.listTitle {
 
 p.thumbnailText {
   /*サムネイル上のタイトル*/
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: black;
-}
-
-ul.sideIndex {
-  /*目次用,項目の順序なしリスト*/
-  padding: 0px;
   margin: 0px;
-}
-
-li.sideIndex {
-  /*目次用,箇条書きリスト*/
-  list-style: none;
-}
-
-ul.topList {
-  /*リスト用,項目の順序なしリスト*/
-  padding: 0px;
-  margin: 0px;
-}
-
-li.oneContentSpace {
-  /*リスト用,箇条書きリスト*/
-  list-style: none;
+  text-align: center;
 }

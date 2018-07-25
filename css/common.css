@@ -52,3 +52,14 @@ iframe {
   /*<iframe>タグ*/
   width: 100%;
 }
+
+ul.listNone {
+  /*目次用,項目の順序なしリスト*/
+  padding: 0px;
+  margin: 0px;
+}
+
+li.listNone {
+  /*目次用,箇条書きリスト*/
+  list-style: none;
+}
