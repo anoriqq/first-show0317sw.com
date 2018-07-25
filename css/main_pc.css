@@ -206,3 +206,14 @@ li.sideIndex {
   /*目次用,箇条書きリスト*/
   list-style: none;
 }
+
+ul.topList {
+  /*リスト用,項目の順序なしリスト*/
+  padding: 0px;
+  margin: 0px;
+}
+
+li.oneContentSpace {
+  /*リスト用,箇条書きリスト*/
+  list-style: none;
+}
