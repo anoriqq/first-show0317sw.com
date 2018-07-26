@@ -1,0 +1,10 @@
+img.deg180{
+  /*画像*/
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+img.deg90{
+  width: 100%;
+  transform: rotate(90deg);
+}
