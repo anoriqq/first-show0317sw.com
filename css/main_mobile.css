@@ -12,10 +12,30 @@ body {
   font-weight: 400;
 }
 
+#loader {
+  /*ローダー*/
+  display: none;
+}
+
+.header_image {
+  /*ヘッダー上の画像*/
+  height: 100px;
+  object-fit: cover;
+}
+
+.header {
+  /*ヘッダー*/
+}
+
 /*///////////////////////////////////////////////////////////////////////*/
 
 a {
   /*<a>タグ*/
   color: black;
   text-decoration: none;
+}
+
+img {
+  /*画像*/
+  width: 100%;
 }

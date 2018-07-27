@@ -1,10 +1,13 @@
-img.deg180{
-  /*画像*/
-  width: 100%;
+img.deg180 {
+  /*180度回転画像*/
+  width: 50%;
   transform: rotate(180deg);
 }
 
-img.deg90{
-  width: 100%;
+img.deg90 {
+  /*90度回転画像*/
+  width: 50%;
   transform: rotate(90deg);
+  filter: blur(-10px);
+  margin: 50px 0px;
 }

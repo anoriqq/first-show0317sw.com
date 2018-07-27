@@ -94,7 +94,7 @@ footer {
 
 #pageTop_link {
   /*ページtopにジャンプするやつ*/
-  background: snow;
+  background: white;
   position: fixed;
   bottom: 10%;
   right: 5%;
@@ -126,7 +126,7 @@ footer {
 
 .mainSpace {
   /*ど真ん中のメイン記事*/
-  background: snow;
+  background: white;
   border-radius: 3px;
   margin: 0px 20px;
   padding: 10px;
@@ -178,7 +178,7 @@ p.listTitle {
 }
 
 .thumbnailTextSpace {
-  /*サムネイル上のタイトルテキストの下*/
+  /*サムネイル上のタイトルテキストの下レイヤー*/
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 100%;

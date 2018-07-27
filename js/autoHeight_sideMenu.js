@@ -27,4 +27,9 @@
     }, 100);
   };
 
+  // 3. bodyの読み込みが完了時点で処理を行う｡
+  document.body.onload = function () {
+    changeParentHeight();
+  };
+
 })();
