@@ -24,7 +24,7 @@
       top: 0,
       behavior: "smooth"
     })
-  }
+  };
 
   /*ローダー*/
   const element = document.getElementById('loader');
