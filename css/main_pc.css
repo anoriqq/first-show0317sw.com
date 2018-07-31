@@ -46,6 +46,8 @@ body {
   width: 100%;
   object-fit: cover;
   margin-bottom: -7px;
+  transform: rotate(0deg);
+  padding: 0px;
 }
 
 header {
@@ -194,4 +196,8 @@ p.thumbnailText {
   color: black;
   margin: 0px;
   text-align: center;
+}
+
+.twitter-tweet{
+  margin: 0px auto;
 }

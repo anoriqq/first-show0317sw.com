@@ -1,7 +1,8 @@
-img.deg180 {
+img{
   /*180度回転画像*/
   width: 50%;
   transform: rotate(180deg);
+  padding: 10px;
 }
 
 img.deg90 {
@@ -10,4 +11,16 @@ img.deg90 {
   transform: rotate(90deg);
   filter: blur(-10px);
   margin: 50px 0px;
+}
+
+img.degNone{
+  transform: rotate(0deg);
+}
+
+img.imgBox{
+  width: 97%;
+}
+
+li.listNone {
+  text-align: center;
 }
