@@ -29,7 +29,6 @@
   /*ローダー*/
   const element = document.getElementById('loader');
   document.body.onload = function () {
-    //element.style.display = 'none';
     element.classList.add('none');
   };
 
