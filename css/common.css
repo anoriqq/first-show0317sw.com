@@ -63,3 +63,7 @@ li.listNone {
   /*目次用,箇条書きリスト*/
   list-style: none;
 }
+
+p.last{
+  margin-bottom: 50px !important;
+}
