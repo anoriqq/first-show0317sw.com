@@ -2,153 +2,163 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <meta http-equiv="Content-Script-Type" content="text/javascript">
-  <meta name="author" content="show0317sw">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=1">
-  <meta name="apple-mobile-web-app-capable" content="no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="description" content="show0317swのほぼ全部">
-  <meta name="keywords" content="show0317sw,ブログ">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121990698-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" media="screen and (min-device-width: 1025px)" href="css/main_pc.css">
-  <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="css/main_mobile.css">
-  <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/vdgrbaavtb6x41m/pageIcon.png" type="image/png">
-  <link rel="apple-touch-icon" href="https://dl.dropboxusercontent.com/s/vdgrbaavtb6x41m/pageIcon.png" type="image/png">
-  <link rel="stylesheet" href="https://use.typekit.net/kgp5uir.css">
+		gtag('config', 'UA-121990698-1');
+	</script>
 
-  <title>show0317swのほぼ全部</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta name="author" content="show0317sw">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=1">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="show0317swのほぼ全部">
+	<meta name="keywords" content="show0317sw,ブログ">
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" media="screen and (min-device-width: 1025px)" href="css/main_pc.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 480px)" href="css/main_mobile.css">
+	<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/vdgrbaavtb6x41m/pageIcon.png" type="image/png">
+	<link rel="apple-touch-icon" href="https://dl.dropboxusercontent.com/s/vdgrbaavtb6x41m/pageIcon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.typekit.net/kgp5uir.css">
+
+	<title>show0317swのほぼ全部</title>
 </head>
 
 <body>
-  <div id="loader">
-    <p>loading...</p>
-  </div>
+	<div id="loader">
+		<p>loading...</p>
+	</div>
 
-  <img class="header_image" src="https://dl.dropboxusercontent.com/s/nk13z5hhrwiuwgx/header.jpg">
+	<img class="header_image" src="https://dl.dropboxusercontent.com/s/nk13z5hhrwiuwgx/header.jpg">
 
-  <header id="header" class="flex">
-    <iframe id="iframeHeader" src="article/0_header/header.html" frameborder="0" height="80px"></iframe>
-  </header>
+	<header id="header" class="flex">
+		<iframe id="iframeHeader" src="article/0_header/header.html" frameborder="0" height="80px"></iframe>
+	</header>
 
-  <div class="main flex">
-    <div class="sideBar_left">
-      <div class="sticky">
-        <iframe id="sideMenu" src="article/0_sideBarMenu/sideBarMenu.html" frameborder="0" height="900px"></iframe>
-      </div>
-    </div>
+	<div class="main flex">
+		<div class="sideBar_left">
+			<div class="sticky">
+				<iframe id="sideMenu" src="article/0_sideBarMenu/sideBarMenu.html" frameborder="0" height="900px"></iframe>
+			</div>
+		</div>
 
-    <main>
-      <div class="mainSpace">
-        <div class="listSpace">
-          <p class="listTitle">アップデート記事</p>
-          <a href="" class="scroleButtonLeft"></a>
-          <div class="listMain">
-            <ul class="flex listNone">
-              <li class="oneContentSpace listNone" style="display: none">
-                <a href="article/2_Traveling_alone/3_day2.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~2日目~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone">
-                <a href="article/2_Traveling_alone/2_day1.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~1日目~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone">
-                <a href="article/2_Traveling_alone/1_Introduction.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~はじめに~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone">
-                <a href="article/1_self_introduction/self_introduction.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/tnjr5bb6lmqgcur/show0317sw.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">おまだれ</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone" style="display: none">
-                <a href="article/2_Traveling_alone/4_day3.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~3日目~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone" style="display: none">
-                <a href="article/2_Traveling_alone/1_Introduction.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~4日目~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone" style="display: none">
-                <a href="article/2_Traveling_alone/1_Introduction.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~5日目~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="oneContentSpace listNone" style="display: none">
-                <a href="article/2_Traveling_alone/1_Introduction.html">
-                  <div class="thumbnailSpace">
-                    <img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
-                    <div class="thumbnailTextSpace">
-                      <p class="thumbnailText">一人旅~6日目~</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <a href="" class="scroleButtonRight"></a>
-        </div>
-      </div>
-    </main>
+		<main>
+			<div class="mainSpace">
+				<div class="listSpace">
+					<p class="listTitle">アップデート記事</p>
+					<a href="" class="scroleButtonLeft"></a>
+					<div class="listMain">
+						<ul class="flex listNone">
+							<li class="oneContentSpace listNone" style="display: none">
+								<a href="article/2_Traveling_alone/3_day2.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~2日目~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone">
+								<a href="article/2_Traveling_alone/2_day1.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~1日目~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone">
+								<a href="article/2_Traveling_alone/1_Introduction.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~はじめに~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone">
+								<a href="article/1_self_introduction/self_introduction.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/tnjr5bb6lmqgcur/show0317sw.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">おまだれ</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone" style="display: none">
+								<a href="article/2_Traveling_alone/4_day3.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~3日目~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone" style="display: none">
+								<a href="article/2_Traveling_alone/1_Introduction.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~4日目~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone" style="display: none">
+								<a href="article/2_Traveling_alone/1_Introduction.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~5日目~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="oneContentSpace listNone" style="display: none">
+								<a href="article/2_Traveling_alone/1_Introduction.html">
+									<div class="thumbnailSpace">
+										<img src="https://dl.dropboxusercontent.com/s/6cn70yv6a5jvo79/hitoritabi_thumbnail.png" alt="png" class="thumbnail">
+										<div class="thumbnailTextSpace">
+											<p class="thumbnailText">一人旅~6日目~</p>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="" class="scroleButtonRight"></a>
+				</div>
+			</div>
+		</main>
 
-    <div class="sideBar_right">
-      <div class="sticky">
-      </div>
-    </div>
-  </div>
+		<div class="sideBar_right">
+			<div class="sticky">
+			</div>
+		</div>
+	</div>
 
-  <div id="pageTop_link">TOP</div>
+	<div id="pageTop_link">TOP</div>
 
-  <footer>
-    <iframe id="footer" src="article/0_footer/footer.html" frameborder="0" height="60px"></iframe>
-  </footer>
+	<footer>
+		<iframe id="footer" src="article/0_footer/footer.html" frameborder="0" height="60px"></iframe>
+	</footer>
 
-  <script type="text/javascript" src="js/mainPage.js"></script>
-  <script type="text/javascript" src="js/autoHeight_sideMenu.js"></script>
-  <script type="text/javascript" src="js/autoHeight_footer.js"></script>
+	<script type="text/javascript" src="js/mainPage.js"></script>
+	<script type="text/javascript" src="js/autoHeight_sideMenu.js"></script>
+	<script type="text/javascript" src="js/autoHeight_footer.js"></script>
 </body>
 
 </html>
